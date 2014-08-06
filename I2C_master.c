@@ -40,7 +40,7 @@ uint8_t I2C_start(uint8_t address){
 	return 0;
 }
 
-void I2C_write(uint8_t data){
+uint8_t I2C_write(uint8_t data){
 	// load data into data register
 	TWDR = data;
 	// start transmission of data
